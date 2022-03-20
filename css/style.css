@@ -1,0 +1,689 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+a{
+    text-decoration: none;
+}
+
+
+/*Navbar start*/
+nav{
+    background:url(../image/fon2.webp);
+    background-size: cover;
+    position: fixed;
+    padding: 0 30px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+nav > .nav-left a img{
+    height: 33px;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+nav > .nav-left{
+    float: left;
+    width: 70% ;
+}
+
+nav > .nav-left> ul{
+    float: right;
+    margin-left: 80px;
+}
+
+nav > .nav-left > ul > li{
+    display: inline-block;
+}
+
+nav > .nav-left > ul > li > a{
+    padding: 30px 20px;
+    display: inline-block;
+    color: white;
+}
+
+nav > .nav-left > ul > li > a:hover{
+    color: rgb(13, 252, 33);
+}
+
+nav > .nav-left >ul > li > ul{
+    display: none;
+}
+
+nav > .nav-left  > ul > li:hover > ul{
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1; 
+}
+
+nav > .nav-left > ul > li > ul a{
+    padding: 10px 20px;
+    display: block;
+    min-width: 250px;
+    color: rgb(0, 0, 59);
+}
+
+nav > .nav-left > ul > li > ul a:hover{
+    background-color: rgb(238, 239, 255);
+    color: #13c4a1;
+    transform: translateX(10px);
+    transition: .5s;
+}
+
+nav > .nav-right{
+    display: inline-block;
+    width: 29%;
+    text-align: right;
+}
+
+nav > .nav-right a{
+    padding: 10px 7px;
+}
+
+nav > .nav-right a:first-child{
+    font-weight: bold;
+}
+
+nav > .nav-right a:first-child::after{
+    content: "";
+    display: inline-block;
+    height: 78px;
+    width: 2px;
+    background-color: rgb(0, 255, 255);
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+nav > .nav-right a img{
+    height: 22px;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+/*Navbar End*/
+
+header{
+    background: url(../image/fon2.webp);
+    background-size: cover;
+}
+
+header .info {
+    width: 50%;
+    height: 0;
+    float: left;
+    margin-left: 30px;
+    margin-top: 90px;
+    z-index: 1;
+}
+
+header .info h1 {
+    font-size: 70px;
+    font-family: nunito;
+    color: white;
+    font-weight: 900;
+}
+
+header .info p {
+    font-size: 18px;
+    font-family: nunito;
+    color: #f2f2f2;
+    margin: 28px 0;
+}
+
+header .info button {
+    width: 180px;
+    height: 70px;
+    background-color: #ff8a73;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    color: white;
+    font-family: nunito;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+header .info button:hover {
+    color: #ff8a73;
+    background-color: white;
+    transition: .5s;
+}
+
+header .info input {
+    background-color: #05b491;
+    height: 70px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: white;
+    border: 2px solid #11b896;
+}
+
+header .info h1 {
+    font-size: 70px;
+    font-family: nunito;
+    color: white;
+    font-weight: 900;
+}
+
+header .info p {
+    font-size: 18px;
+    font-family: nunito;
+    color: #f2f2f2;
+    margin: 28px 0;
+}
+
+header .info button {
+    width: 180px;
+    height: 70px;
+    background-color: #ff8a73;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    color: white;
+    font-family: nunito;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+header .info button:hover {
+    color: #ff8a73;
+    background-color: white;
+    transition: .5s;
+}
+
+header .info input {
+    background-color: #05b491;
+    height: 70px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: white;
+    border: 2px solid #11b896;
+}
+
+header .phone {
+    width: 450px;
+    height: 100%;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+header .phone img {
+    width: 400px;
+    margin-top: 90px;
+    position: absolute;
+    animation-name: phone;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+}
+header .phone img:last-child {
+    position: absolute;
+    left: 50%;
+    animation-name: phone;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+}
+
+@keyframes phone {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: 15px;
+    }
+    50% {
+        top: 30px;
+    }
+    75% {
+        top: 15px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+
+.div_2{
+    width: 200px;
+    height: 200px;
+    padding: 400px;
+}
+  
+.div_2 h1{
+     margin-right: 120px;
+     float: right;
+}
+
+section{
+   background-color: white;
+    height: 1000px;
+}
+
+section h3{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+section p{
+    text-align: center;
+    margin-top: 15px;
+}
+
+section div{
+    background-color: rgba(245, 245, 245, 0.856) ;
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    width: 22%;
+    float: right;
+    margin: 30px  1%;
+    margin-right: 100px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+section .div_3{
+    padding: 35px;
+    margin-left: 70px;
+    width: 20%;
+    height: 250px;
+    float: left;
+    background-color: rgb(228, 228, 228);
+    transition: .4s;
+}
+
+section .div_3:hover{
+   transform: translateY(-15px);
+   transition: .5s;
+   cursor: pointer;
+   background-color: #38d8b8;
+   color: #212529;
+}
+
+section div a{
+   font-size: 25px;
+}
+
+section img{
+   width: 40px;
+}
+
+.div_6{
+   background-color: white;
+   width: 700px;
+   float: left;
+   padding: 100px;
+}
+
+.div_6 img{
+    width: 700px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.div_7{
+    background-color: white;
+    width: 500px;
+    margin-right: 20px;
+}
+
+.div_8{
+    background-color: white;
+    width: 500px;
+    margin-right: 20px;
+    margin-top: 1px;
+}
+
+.div_9{
+    background-color: white;
+    width: 500px;
+    margin-right: 20px;
+    margin-top: 1px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clear::after{
+   content: "";
+   display: block;
+   clear: both;
+}
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+
+.hr-animation{
+    width: 100px;
+    height: 5px;
+    background-color: #13c4a1;
+    margin: 20px auto;
+    border-radius: 3px;
+    position: relative;
+}
+
+.hr-animation::before{
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: white;
+    position: absolute;
+    animation-name: hrAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hrAnimation{
+    0%{
+       left: 0
+    }
+    100%{
+      left: 100%;
+    }
+}
+
+article{
+    background-color: white;
+}
+
+article.price-box{
+   padding: 80px 30px;
+   text-align: center;
+   position: relative;
+}
+
+article.price-box .our_div img{
+    margin-top: 400px;
+    animation-name: Phone3Animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    right: 270px
+}
+
+.our_div h4{
+   font-size: 50px;
+   font-weight: 700;
+}
+
+.our_div h5{
+   color: white;
+   font-size: 16px;
+}
+
+article.price-box .our_div .dr-animation{
+    width: 100px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    border-radius: 3px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.dr-animation::before{
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: #13c4a1bb;
+    position: absolute;
+    animation-name: dranimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dranimation{
+    0%{
+       left: 0
+    }
+    100%{
+      left: 100%;
+    }
+}
+
+
+@keyframes Phone3Animation{
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: 15px;
+    }
+    50% {
+        top: 30px;
+    }
+    75% {
+        top: 15px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+article.price-box h2{
+   font-size: 35px;
+   text-transform: capitalize;
+   margin-top: 50px;
+}
+
+article.price-box p{
+    font-size: 16px;
+    color: #818992;
+}
+
+article.price-box .item{
+   float: left;
+   background-color: #13c4a1;
+   color: white;
+   width: 31%;
+   margin: 35px 1% 0;
+   padding: 30px 0;
+   transition: all .4s;
+}
+
+article.price-box .item:hover{
+   transform: translateY(-30px);
+}
+
+article.price-box .item h3{
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+article.price-box .item .price{
+   font-size: 45px;
+   font-weight: 700;
+   text-align: left;
+   padding: 15px 0 15px 65px;
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+   color: black;
+}
+
+article.price-box .item .price sup
+article.price-box .item .price sub{
+   font-size: 16px;
+}
+
+article.price-box .item .price::after{
+    position: absolute;
+    left: -20%;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    content: '';
+    height: 100%;
+    transform: skewX(-35deg);
+    z-index: -1;
+}
+
+article.price-box .item ul{
+    margin-top: 30px;
+}
+
+article.price-box .item ul li{
+    line-height: 35px;
+}
+
+article.price-box .item{
+    border-radius: 10px;
+}
+
+article.price-box .item a{
+    background-color: #FF8A73;
+    display: inline-block;
+    padding:  13px 31px;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 13px 27px 0 rgba(163,48,53, 0.25);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 25px;
+}
+
+article.price-box .item a::before,
+article.price-box .item a::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    top: 0;
+    transition: all .8s;
+}
+
+article.price-box .item a::before{
+    left: -100%;
+}
+
+article.price-box .item a::after{
+    right: -100%;
+}
+
+article.price-box .item a:hover::before{
+    left: 0;
+}
+article.price-box .item a:hover{
+   color: chocolate;
+}
+
+article.price-box .item a:hover::after{
+    right: 0;
+}
+
+article.price-box .our_div{
+    background: url(../image/fon\ 3.svg);
+    width: 100%;
+    height: 600px;
+}
+
+.clear .div_w{
+   background-color: crimson;
+}
+
+footer.clear .div_a{
+    width: 30%;
+    background-color: burlywood;
+}
+
+footer.clear .div_b{
+    width: 30%;
+    background-color: blue;
+}
+
+footer {
+    width: 100%;
+}
+
+.footer {
+    margin: 200px 0 0 11px;
+    height: 300px;
+    width: 24%;
+    float: left;
+}
+
+.footer img {
+    width: 110px;
+    height: 33px;
+    margin-bottom: 40px;
+}
+
+.footer p {
+    font-size: 16px;
+    font-family: nunito;
+    color: #818992;
+}
+
+.footer h3 {
+    font-size: 24px;
+    font-family: nunito;
+    margin-bottom: 25px;
+    color: #212529;
+}
+
+footer a {
+    color: #818992;
+}
+
+footer a:hover{
+    color: #13c4a1;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    padding-top: 4px;
+    transition: .4s;
+}
+
+footer ul li:hover {
+    transform: translateX(10px);
+    transition: .5s;
+}
+
+footer .container {
+    height: 300px;
+}
+
+footer .container > p {
+    font-size: 30px;
+    text-align: center;
+    color: #818992;
+    padding-bottom: 10px;
+}
